@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "kiali-istio-auth.fullname" . }}-test-connection"
+  labels:
+    {{- include "kiali-istio-auth.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "kiali-istio-auth.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
