@@ -7,6 +7,6 @@ dependencies:
   version: 1.28.0
 - name: kiali-server
   repository: https://kiali.org/helm-charts
-  version: 1.30.0
-digest: sha256:a9c90ef7179ab2437160fea2c82ae7170e1edb59a910f920114b7a2538c4402a
-generated: "2025-12-02T07:41:49.679004566Z"
+  version: 2.19.0
+digest: sha256:416d160f8fbe7a49a031730ad0fa3d391fe470cb8652c99ab7c1f8512a6f7e79
+generated: "2025-12-02T09:21:57.333070052Z"

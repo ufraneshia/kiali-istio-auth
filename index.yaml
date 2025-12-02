@@ -3,7 +3,7 @@ entries:
   base:
   - apiVersion: v2
     appVersion: 1.28.0
-    created: "2025-12-02T08:59:32.741056486Z"
+    created: "2025-12-02T09:22:10.371939489Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: b6844635348f9b4a70277bf00ca941b32b53cfed42def4b4a915d6db34f2f679
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -18,7 +18,7 @@ entries:
   istiod:
   - apiVersion: v2
     appVersion: 1.28.0
-    created: "2025-12-02T08:59:32.744123031Z"
+    created: "2025-12-02T09:22:10.375184841Z"
     description: Helm chart for istio control plane
     digest: a06ec4fe903479cedb277a9f3d53f0f1644cf232fe16c974dc7696e3934470b1
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -34,8 +34,8 @@ entries:
     version: 1.28.0
   kiali-istio-auth:
   - apiVersion: v2
-    appVersion: 1.28.0
-    created: "2025-12-02T08:59:32.736220897Z"
+    appVersion: 0.0.1
+    created: "2025-12-02T09:22:10.364591464Z"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -45,24 +45,24 @@ entries:
       version: 1.28.0
     - name: kiali-server
       repository: https://kiali.org/helm-charts
-      version: 1.30.0
+      version: 2.19.0
     description: Combination of Kiali, Istio Base CRDs, and Istio Control Plane helm
       charts
-    digest: a2da956c2051c441af27ac9b25baba45082ef4960ca25b25d69bfa0d198e43f7
+    digest: 0f770ef0974a4606e7ecd3c399f1ce0e0c997928afeff14a30e08192beff4644
     name: kiali-istio-auth
     type: application
     urls:
-    - kiali-istio-auth-1.28.0.tgz
-    version: 1.28.0
+    - kiali-istio-auth-0.0.1.tgz
+    version: 0.0.1
   kiali-server:
   - apiVersion: v2
-    appVersion: v1.30.0
-    created: "2025-12-02T08:59:32.746223644Z"
+    appVersion: v2.19.0
+    created: "2025-12-02T09:22:10.376560061Z"
     description: Kiali is an open source project for service mesh observability, refer
       to https://www.kiali.io for details.
-    digest: 9c6573c90b6de892f372fa26181c6c895ad9e13810fe887c8d43eebd517dc1fc
+    digest: aa9e0893054377229922b379c9892b25f03a204ec9d4143d8ccc75ff4d69ce7a
     home: https://github.com/kiali/kiali
-    icon: https://raw.githubusercontent.com/kiali/kiali.io/master/themes/kiali/static/img/kiali_logo_masthead.png
+    icon: https://raw.githubusercontent.com/kiali/kiali.io/current/assets/icons/logo.svg
     keywords:
     - istio
     - kiali
@@ -73,10 +73,9 @@ entries:
     name: kiali-server
     sources:
     - https://github.com/kiali/kiali
-    - https://github.com/kiali/kiali-ui
     - https://github.com/kiali/kiali-operator
     - https://github.com/kiali/helm-charts
     urls:
-    - charts/kiali-server-1.30.0.tgz
-    version: 1.30.0
-generated: "2025-12-02T08:59:32.724676926Z"
+    - charts/kiali-server-2.19.0.tgz
+    version: 2.19.0
+generated: "2025-12-02T09:22:10.347295781Z"

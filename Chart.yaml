@@ -3,16 +3,16 @@ name: kiali-istio-auth
 description: Combination of Kiali, Istio Base CRDs, and Istio Control Plane helm charts
 
 type: application
-version: 1.28.0 # Please ensure that both base and control plane versions match
-appVersion: "1.28.0"
+version: 0.0.1 
+appVersion: "0.0.1"
 
 dependencies:
 - name: base
-  version: "1.28.0"
+  version: "1.28.0" # Please ensure that both base and control plane versions match
   repository: "https://istio-release.storage.googleapis.com/charts"
 - name: istiod
-  version: "1.28.0"
+  version: "1.28.0" # Please ensure that both base and control plane versions match
   repository: "https://istio-release.storage.googleapis.com/charts"
 - name: kiali-server
-  version: "1.30.0"
+  version: "2.19.0"
   repository: "https://kiali.org/helm-charts"
