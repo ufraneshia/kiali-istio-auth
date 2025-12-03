@@ -5,4 +5,4 @@ base: {}
 istiod: {}
 
 # Define any custom values for the control place Helm chart here!
-kiali: {}
+kiali-server: {}
