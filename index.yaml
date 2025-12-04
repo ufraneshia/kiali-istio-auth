@@ -3,7 +3,7 @@ entries:
   base:
   - apiVersion: v2
     appVersion: 1.28.0
-    created: "2025-12-02T09:22:10.371939489Z"
+    created: "2025-12-04T03:06:45.500626549Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: b6844635348f9b4a70277bf00ca941b32b53cfed42def4b4a915d6db34f2f679
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -18,7 +18,7 @@ entries:
   istiod:
   - apiVersion: v2
     appVersion: 1.28.0
-    created: "2025-12-02T09:22:10.375184841Z"
+    created: "2025-12-04T03:06:45.505993352Z"
     description: Helm chart for istio control plane
     digest: a06ec4fe903479cedb277a9f3d53f0f1644cf232fe16c974dc7696e3934470b1
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -35,7 +35,7 @@ entries:
   kiali-istio-auth:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2025-12-02T09:22:10.364591464Z"
+    created: "2025-12-04T03:06:45.494202683Z"
     dependencies:
     - name: base
       repository: https://istio-release.storage.googleapis.com/charts
@@ -43,12 +43,13 @@ entries:
     - name: istiod
       repository: https://istio-release.storage.googleapis.com/charts
       version: 1.28.0
-    - name: kiali-server
+    - alias: kiali
+      name: kiali-server
       repository: https://kiali.org/helm-charts
       version: 2.19.0
     description: Combination of Kiali, Istio Base CRDs, and Istio Control Plane helm
       charts
-    digest: 0f770ef0974a4606e7ecd3c399f1ce0e0c997928afeff14a30e08192beff4644
+    digest: 5256b099c3b199079857ede61cc57f7f8b61fd38bb2fe0223e1d94d369305f46
     name: kiali-istio-auth
     type: application
     urls:
@@ -57,7 +58,7 @@ entries:
   kiali-server:
   - apiVersion: v2
     appVersion: v2.19.0
-    created: "2025-12-02T09:22:10.376560061Z"
+    created: "2025-12-04T03:06:45.507901386Z"
     description: Kiali is an open source project for service mesh observability, refer
       to https://www.kiali.io for details.
     digest: aa9e0893054377229922b379c9892b25f03a204ec9d4143d8ccc75ff4d69ce7a
@@ -78,4 +79,4 @@ entries:
     urls:
     - charts/kiali-server-2.19.0.tgz
     version: 2.19.0
-generated: "2025-12-02T09:22:10.347295781Z"
+generated: "2025-12-04T03:06:45.472415674Z"
